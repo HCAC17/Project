@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <meta charset="UTF-8"/>
-    <head>
-        <title>Formulario</title>
-    </head>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Formulario</title>
+  </head>
 
-    <body>
-        <!--Div label-->
-        <div>
-            <label for="categoria">Categorias</label>
-            <select name="categoria" id="categoria">
-                <option value="ADM">Administrador</option>
-                <option value="gerente">Gerente</option>
-                <option value="funcionario" selected>Funcionarios</option>
-            </select>
-        </div>
-    </body>
+  <body>
+    <!--Div label post-->
+    <div>
+      <!--Conection on selection-->
+      <label for="categoria">Categorias</label>
+      <!--Selection bos-->
+      <select name="categoria" id="categoria">
+        <option value="ADM">Administrador</option>
+        <option value="gerente">Gerente</option>
+        <option value="funcionario" selected>Funcionarios</option>
+      </select>
+    </div>
+    <!--End div label post-->
+
+    <!--Div label colors-->
+    <div>
+      <label for="cores">Selecione suas cores favoritas</label>
+      <br />
+      <input type="checkbox" name="blue" id="blue" />
+      <label for="blue">Azul</label>
+      <br />
+      <input type="checkbox" name="vermelho" id="vermelho" />
+      <label for="vermelho">Vermelho</label>
+      <br />
+      <input type="checkbox" name="verde" id="verde" />
+      <label for="verde">Verde</label>
+    </div>
+    <!--End div label colors-->
+  </body>
 </html>
