@@ -7,65 +7,89 @@
   </head>
 
   <body>
-    <!--Div post-->
-    <div>
-      <!--Conection on selection-->
-      <label for="categoria">Categorias</label>
-      <!--Selection bos-->
-      <select name="categoria" id="categoria">
-        <option value="ADM">Administrador</option>
-        <option value="gerente">Gerente</option>
-        <option value="funcionario" selected>Funcionarios</option>
-      </select>
-    </div>
-    <!--End div post-->
-    <br />
-    <!--Div colors-->
-    <div>
-      <label>Selecione suas cores favoritas</label>
-      <br />
-      <input type="checkbox" name="blue" id="blue" />
-      <label for="blue">Azul</label>
-      <br />
-      <input type="checkbox" name="vermelho" id="vermelho" />
-      <label for="vermelho">Vermelho</label>
-      <br />
-      <input type="checkbox" name="verde" id="verde" />
-      <label for="verde">Verde</label>
-    </div>
-    <!--End div colors-->
-    <br />
-    <!--Div sexo-->
-    <div>
-      <label>Sexo:</label>
+    <!--Div form-->
+    <form action="#">
+      <!--div email-->
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" size="70" required />
+      </div>
+      <!--end div email-->
+      <!--div name-->
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" size="70" required />
+      </div>
+      <!--end div name-->
 
-      <input type="radio" name="sexo" id="sexo_m" />
-      <label for="sexo_m" value="m">Masculino</label>
-
-      <input type="radio" name="sexo" id="sexo_f" />
-      <label for="sexo_f" value="f">Feminino</label>
-    </div>
-    <!--End div sexo-->
-    <br />
-    <!--Div txt area-->
-    <div>
-      <label for="comentarios">Comentarios:</label>
+      <!--div age-->
+      <div>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" required />
+      </div>
+      <!--end div age-->
+      <br>
+      <!--Div post-->
+      <div>
+        <!--Conection on selection-->
+        <label for="categoria">Categorias</label>
+        <!--Selection bos-->
+        <select name="categoria" id="categoria">
+          <option value="ADM">Administrador</option>
+          <option value="gerente">Gerente</option>
+          <option value="funcionario" selected>Funcionarios</option>
+        </select>
+      </div>
+      <!--End div post-->
       <br />
-      <textarea
-        name="comentarios"
-        id="comentarios"
-        cols="30"
-        rows="4"
-        maxlength="20"
-        style="resize: none"
-      ></textarea>
-    </div>
-    <!--End div txt area-->
+      <!--Div colors-->
+      <div>
+        <label>Selecione suas cores favoritas</label>
+        <br />
+        <input type="checkbox" name="blue" id="blue" />
+        <label for="blue">Azul</label>
+        <br />
+        <input type="checkbox" name="vermelho" id="vermelho" />
+        <label for="vermelho">Vermelho</label>
+        <br />
+        <input type="checkbox" name="verde" id="verde" />
+        <label for="verde">Verde</label>
+      </div>
+      <!--End div colors-->
+      <br />
+      <!--Div sexo-->
+      <div>
+        <label>Sexo:</label>
 
-    <!--Div buttom-->
-    <div>
-      <button type="submit" value="comprar" name="btn_compar">Comprar</button>
-    </div>
-    <!--End div buttom-->
+        <input type="radio" name="sexo" id="sexo_m" />
+        <label for="sexo_m" value="m">Masculino</label>
+
+        <input type="radio" name="sexo" id="sexo_f" />
+        <label for="sexo_f" value="f">Feminino</label>
+      </div>
+      <!--End div sexo-->
+      <br />
+      <!--Div txt area-->
+      <div>
+        <label for="comentarios">Comentarios:</label>
+        <br />
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="30"
+          rows="4"
+          maxlength="20"
+          style="resize: none"
+        ></textarea>
+      </div>
+      <!--End div txt area-->
+
+      <!--Div buttom-->
+      <div>
+        <button type="submit" value="enviar" name="btn_enviar">Enviar</button>
+      </div>
+      <!--End div buttom-->
+    </form>
+    <!--End div form-->
   </body>
 </html>
